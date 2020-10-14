@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Namespace
 metadata:
@@ -8,8 +9,6 @@ kind: Deployment
 metadata:
   name: nginx-gitops
   namespace: gitops-demo
-  annotations:
-    flux.weave.works/automated: 'true'
 spec:
   selector:
     matchLabels:
