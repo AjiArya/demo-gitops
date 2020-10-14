@@ -2,13 +2,13 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: gitops-demo
+  name: gitops-demo-development
 ---
 apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
 metadata:
-  name: nginx-gitops
-  namespace: gitops-demo
+  name: nginx-gitops-devel
+  namespace: gitops-demo-development
 spec:
   selector:
     matchLabels:
