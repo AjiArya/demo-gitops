@@ -9,6 +9,8 @@ kind: Deployment
 metadata:
   name: nginx-gitops
   namespace: gitops-demo
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   selector:
     matchLabels:
